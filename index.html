@@ -14,96 +14,87 @@
   <div class="secondBig">
     <div id="toggles-container-1">
       <div class="toggler" id="frenzy-con">
-        <div class="toggle-text">frenzy</div>
+        <div class="toggle-text">Frenzy</div>
         <div class="togglerBut off" id="frenzyTog"></div>
       </div>
       <div class="toggler" id="action-surge-con">
-        <div class="toggle-text">action surge</div>
+        <div class="toggle-text">Action Surge</div>
         <div class="togglerBut off" id="actionSurgeTog"></div>
       </div>
-      </div>
-      <div id="toggles-container-2">
+    </div>
+    <div id="toggles-container-2">
       <div class="toggler hidden red" id="reload-con">
-        <div class="toggle-text">reload on bonus action</div>
+        <div class="toggle-text">Reload on Bonus Action</div>
         <div class="togglerBut off" id="reloadTog"></div>
       </div>
-      </div>
+    </div>
   <div id="toggles-container-3">
     <div class="toggle-text" id="noOfAttacks">3</div>
   </div>
   <div id="toggles-container-4">
     <div class="toggler2" id="togglerSharp">
-      <div class="toggle-text" id="sharpShooter">Sharpshooter</div>
-      <button class="selectAll onButn" id="sharpAllButton">all</button>
-      <div class="multiTogCon" id="sharpCon">
-      <div class="togglerBut on" id="sharpShooterTog1"></div>
-      <div class="togglerBut on" id="sharpShooterTog2"></div>
-      <div class="togglerBut on" id="sharpShooterTog3"></div>
-      </div>
+        <div class="toggle-text" id="sharpShooter">Sharpshooter</div>
+        <button class="selectAll onButn" id="sharpAllButton">All</button>
+        <div class="multiTogCon" id="sharpCon">
+            <div class="togglerBut on" id="sharpShooterTog1"></div>
+            <div class="togglerBut on" id="sharpShooterTog2"></div>
+            <div class="togglerBut on" id="sharpShooterTog3"></div>
+        </div>
     </div>
     <div class="toggler2" id="togglerHex">
-      <div class="toggle-text" id="hex">Hex</div>
-      <button class="selectAll onButn" id="hexAllButton">all</button>
-      <div class="multiTogCon" id="hexCon">
-      <div class="togglerBut off" id="hexTog1"></div>
-      <div class="togglerBut off" id="hexTog2"></div>
-      <div class="togglerBut off" id="hexTog3"></div>
+        <div class="toggle-text" id="hex">Hex</div>
+        <button class="selectAll onButn" id="hexAllButton">All</button>
+        <div class="multiTogCon" id="hexCon">
+            <div class="togglerBut off" id="hexTog1"></div>
+            <div class="togglerBut off" id="hexTog2"></div>
+            <div class="togglerBut off" id="hexTog3"></div>
         </div>
     </div>
     <div class="toggler2" id="togglerCurse">
-      <div class="toggle-text" id="curse">Hexblade's Curse</div>
-      <button class="selectAll onButn" id="curseAllButton">all</button>
-      <div class="multiTogCon" id="curseCon">
-        <div class="togglerBut off" id="curseTog1"></div>
-        <div class="togglerBut off" id="curseTog2"></div>
-        <div class="togglerBut off" id="curseTog3"></div>
+        <div class="toggle-text" id="curse">Hexblade's Curse</div>
+        <button class="selectAll onButn" id="curseAllButton">All</button>
+        <div class="multiTogCon" id="curseCon">
+            <div class="togglerBut off" id="curseTog1"></div>
+            <div class="togglerBut off" id="curseTog2"></div>
+            <div class="togglerBut off" id="curseTog3"></div>
+          </div>
+        </div>
+      </div>
+      <div id="toggles-container-5">
+        <div class="toggler" id="gun-stack-con">
+          <div class="toggle-text">Current Gun Stack</div>
+          <div class="togglerBut on" id="gunStackTog0">0</div>
+          <div class="togglerBut off" id="gunStackTog1">1</div>
+          <div class="togglerBut off" id="gunStackTog2">2</div>
+        </div>
+        <div class="toggler" id="reapers-blood-con">
+          <div class="toggle-text">Reapers Blood HP</div>
+          <input class="hp-input" id="hp" type="number" placeholder="HP">
+        </div>
+        <div class="toggler" id="autocrit-con">
+          <div class="toggle-text">Auto Crit</div>
+          <div class="togglerBut off" id="autocritTog"></div>
+        </div>
       </div>
     </div>
-    <div class="toggler2" id="togglerAdv">
-      <div class="toggle-text" id="adv">Advantage</div>
-      <button class="selectAll onButn" id="advAllButton">all</button>
-      <div class="multiTogCon" id="advCon">
-        <div class="togglerBut off" id="advTog1"></div>
-        <div class="togglerBut off" id="advTog2"></div>
-        <div class="togglerBut off" id="advTog3"></div>
+    <div class="thirdBig">
+      <div class="big-roll-container">
+        <button class="big-roll">ROLL</button>
+        <div class="fourthBig">
+            <!-- Content for fourthBig goes here -->
+        </div>
+        <div class="all-results-container" id="res-con">
+            <!-- Individual results will be dynamically added here -->
+        </div>
       </div>
+    </div>
+    <div class="big-result-container">
+        <p>Total:</p>
+        <p id="final-result-t">0</p>
+        <p class="total-n-mp" id="final-result-n">(0 necrotic,</p>
+        <p class="total-n-mp" id="final-result-mp">0 magical piercing)</p>
     </div>
   </div>
-  <div id="toggles-container-5">
-      <div class="toggler" id="gun-stack-con">
-        <div class="toggle-text">current gun stack</div>
-        <div class="togglerBut on" id="gunStackTog0">0</div>
-        <div class="togglerBut off" id="gunStackTog1">1</div>
-        <div class="togglerBut off" id="gunStackTog2">2</div>
-      </div>
-      <div class="toggler" id="reapers-blood-con">
-        <div class="toggle-text">reapers blood hp</div>
-        <input class="hp-input" id="hp" type="number" placeholder="hp">
-      </div>
-    <div class="toggler" id="autocrit-con">
-      <div class="toggle-text">auto crit</div>
-      <div class="togglerBut off" id="autocritTog"></div>
-    </div>
-    </div>
-  </div>
-  <div class="thirdBig">
-    <div class="big-roll-container">
-      <button class="big-roll">ROLL</button>
-      <div class="big-result-container">
-        <p>total:</p>
-        <p id="final-result-con">
-        <p id="final-result-t"></p>
-        <p class="total-n-mp" id="final-result-n"></p>
-        <p class="total-n-mp" id="final-result-mp"></p>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="fourthBig">
-    <div class="all-results-container" id="res-con">
-    </div>
-  </div>
-</div>
-<script type="module" src="main.js"></script>
-</body>
+  <script type="module" src="main.js"></script>
+  </body>
 </html>
