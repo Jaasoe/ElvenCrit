@@ -110,6 +110,32 @@ body {
     border-radius: 8px;
 }
 
+.rollStatButton {
+    background: #f8f9fa; /* Light background for default state */
+    border: 2px solid #ddd; /* Neutral border */
+    border-radius: 8px; /* Rounded corners */
+    color: #333; /* Dark text color */
+    font-size: 0.9rem; /* Adjust font size */
+    padding: 0.5rem 1rem; /* Add padding for better spacing */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    transition: all 0.2s ease; /* Smooth transition for hover and toggle effects */
+    opacity: 0.8; /* Slightly transparent by default */
+}
+
+.rollStatButton:hover {
+    background: #e9ecef; /* Slightly darker background on hover */
+    opacity: 1; /* Fully opaque on hover */
+    transform: scale(1.05); /* Subtle scaling effect */
+}
+
+.rollStatButton.onButton {
+    background: var(--secondary-color); /* Use secondary color for toggled state */
+    border-color: var(--secondary-color); /* Match border color */
+    color: white; /* White text for contrast */
+    opacity: 1; /* Fully opaque when toggled */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for emphasis */
+}
+
 .hidden {
     display: none;
 }
