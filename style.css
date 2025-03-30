@@ -1,0 +1,312 @@
+/*----entire page-----*/
+body{
+    display: flex;
+    height: 97vh;
+    width: 98vw;
+    background-color: grey;
+}
+.page-container{
+    height:100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:transparent;
+}
+
+
+/*----four big containers-----*/
+.firstBig{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:6%;
+}
+.secondBig{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:55%;
+    background-color:white;
+}
+.thirdBig{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:8%;
+    background-color:green;
+}
+.fourthBig{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:30%;
+    background-color:red;
+}
+
+/*----big 1 container:-----*/
+.title{
+    display:flex;
+    justify-content: center;
+    font-size: 180%;
+    width:100%;
+    padding-bottom:2%;
+    background-color:transparent;
+    height:3%;
+}
+
+/*----big 2 container:-----*/
+#toggles-container-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height:17%;
+    background-color:lightgray;
+}
+#toggles-container-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height:17%;
+    background-color: lightblue;
+}
+#toggles-container-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height:17%;
+    background-color: lightcoral;;
+}
+#toggles-container-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height:60%;
+    background-color: lightgoldenrodyellow;
+}
+#toggles-container-5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height:20%;
+    background-color: lightgreen;;
+}
+
+/*----texts, buttons, small containers and togglers-----*/
+#noOfAttacks{
+    font-size:180%;
+}
+
+
+#sharpShooter{
+    margin-left:6%;
+}
+#hex{
+    padding-left:19%;
+}
+#curse{
+    padding-left:0%;
+}
+#adv{
+    padding-left:9.5%;
+}
+
+.toggler{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color:grey;
+    border: 2px solid;
+    margin-left:1%;
+    margin-right:1%;
+    width:40%;
+    height:40%;
+}
+
+.toggler2{
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    background-color:goldenrod;
+    border: 2px solid;
+    margin:1%;
+    padding-left:2%;
+    padding-right:2%;
+    width:60%;
+    height:25%;
+}
+
+.selectAll{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:80%;
+    width:8%;
+    margin-left:2%;
+    border-radius:20%;
+}
+
+.selectAll:hover{
+    background-color:lightgray;
+    cursor:pointer;
+}
+
+.multiTogCon{
+    display: flex;
+    flex-direction: row;
+}
+
+.onButn{
+    background-color:grey;
+}
+.onButn:hover{
+    background-color:lightgrey;
+}
+
+.toggle-text{
+    color:black;
+}
+
+.togglerBut{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+    border:solid;
+    border-width:2px;
+    border-radius:9px;
+    margin-left:10px;
+    height:18px;
+    width:18px;
+    font-size: 70%;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.on{
+    background-color:black;
+    color:white;
+    border-color:black;
+}
+
+.off{
+    background-color:white;
+    color:black;
+}
+
+.hidden{
+    display:none;
+}
+.red{
+    color:darkred;
+}
+
+.hp-input{
+    width:25%;
+    height:60%;
+    margin-left:5%;
+}
+
+/*----big 3 container:-----*/
+.big-roll-container{
+    display: flex;
+    flex-direction: row;
+    background-color:lightsalmon;
+    justify-content: center;
+    height:100%;
+    width:90%;
+    margin:1%;
+}
+.big-roll{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding-left:10%;
+    padding-right:10%;
+    font-size:150%;
+    border-radius: 20px;
+}
+.big-roll:hover{
+    background-color:lightgray;
+    cursor:pointer;
+}
+.big-result-container{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background-color:lightsteelblue;
+    height:100%;
+    width:60%;
+    font-size:140%;
+}
+
+/*----big 4 container:-----*/
+.all-results-container{
+    height:98%;
+    background-color:sandybrown;
+    width:95%;
+    overflow-y: scroll;
+}
+.rollStatContainer{
+    display:flex;
+    flex-direction: row;
+    float:left;
+    background-color:lightgray;
+    margin-left:5%;
+    margin-bottom:0.5%;
+    height:10%;
+    white-space: nowrap;
+}
+.rollStatButton{
+    margin-right:1%;
+    border-radius:30%;
+    height:110%;
+    width:4%;
+}
+.rollStatButton:hover{
+    background-color:lightgray;
+    cursor:pointer;
+}
+
+.onButton{
+    background-color:darkgrey;
+    color:black;
+    border-radius:20%;
+}
+
+.rollStatButton:visited {
+    background-color:black;
+}
+
+.rollStatInfo{
+
+}
+
+p{
+    margin-right:5px;
+}
+
+.total-n-mp{
+    font-size:70%;
+    color:darkslategray;
+}
+
+
+
