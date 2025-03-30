@@ -857,15 +857,16 @@ updateMultiTogglers();
 
 //----------adding to total-------------
 
-const makeTotalText = () => {
-    const totalElement = document.getElementById("final-result-t");
-    const necroElement = document.getElementById("final-result-n");
-    const piercingElement = document.getElementById("final-result-mp");
+const makeTotalText = (total, necro, mp) =>{
+  const t = document.getElementById("final-result-t");
+  const n = document.getElementById("final-result-n");
+  const map = document.getElementById("final-result-mp");
 
-    totalElement.innerText = `${totalGlobal}`;
-    necroElement.innerText = `(${necroGlobal} necrotic,`;
-    piercingElement.innerText = `${piercGlobal} magical piercing)`;
-};
+
+  t.innerText = `${totalGlobal} `;
+  n.innerText = `(${necroGlobal} necrotic, `;
+  map.innerText = `${piercGlobal} magical piercing)`;
+}
 
 
 const buttonStuff = (button, necro, pierc) =>{
@@ -883,4 +884,3 @@ const buttonStuff = (button, necro, pierc) =>{
     makeTotalText();
   }
 }
-
