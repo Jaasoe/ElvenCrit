@@ -123,3 +123,48 @@ body {
         flex-direction: column;
     }
 }
+
+@media (max-width: 480px) {
+    body {
+        padding: 0.5rem;
+    }
+
+    .title {
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+    }
+
+    .secondBig {
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+    }
+
+    #toggles-container-1,
+    #toggles-container-2,
+    #toggles-container-3,
+    #toggles-container-4,
+    #toggles-container-5 {
+        gap: 0.5rem;
+        padding: 0.25rem 0;
+    }
+
+    .toggler {
+        padding: 0.25rem 0.5rem;
+        gap: 0.25rem;
+    }
+
+    .togglerBut {
+        width: 24px;
+        height: 24px;
+    }
+
+    .big-roll {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .rollStatContainer {
+        padding: 0.25rem;
+        margin: 0.15rem 0;
+    }
+}
