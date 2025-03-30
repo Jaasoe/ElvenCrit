@@ -223,4 +223,7 @@ body {
         font-size: 0.8rem;
         padding: 0.2rem 0.5rem;
     }
+    .hidden {
+        display: none;
+    }
 }
